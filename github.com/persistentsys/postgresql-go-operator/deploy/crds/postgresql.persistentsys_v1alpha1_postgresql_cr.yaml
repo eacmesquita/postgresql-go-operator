@@ -4,4 +4,12 @@ metadata:
   name: example-postgresql
 spec:
   # Add fields here
-  size: 3
+  size: 1
+  rootpwd: password
+  database: test-db
+  username: db-user 
+  password: db-user
+  image: "postgres:10.4"
+  dataStoragePath: "/mnt/data"
+  dataStorageSize: "1Gi"
+  port: 30685
